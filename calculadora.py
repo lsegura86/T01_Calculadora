@@ -1,3 +1,4 @@
+# Creado por Luis Segura
 # Definicion del Metodo para efectuar la Suma
 def sumar(num_a, num_b):
     return num_a + num_b
