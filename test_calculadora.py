@@ -2,7 +2,7 @@
 import calculadora
 import pytest
 
-def test_calculadora():
+def test_sumar():
     #Se comprueba el funcionamiento del metodo de SUMAR
     res = calculadora.sumar(1.0, 1.0)
     print(res)
@@ -14,7 +14,9 @@ def test_calculadora():
     print(res)
     assert res == -21
 
+
     #Se comprueba el funcionamiento del metodo RESTAR
+def test_restar():
     res = calculadora.restar(10.0, 1.0)
     print(res)
     assert res == 9.0
@@ -26,6 +28,7 @@ def test_calculadora():
     assert res == 19
 
     #Se comprueba el funcionamiento del metodo MULTIPLICAR
+def test_multiplicar():
     res = calculadora.multiplicar(10.0, 1.0)
     print(res)
     assert res == 10.0
@@ -40,6 +43,7 @@ def test_calculadora():
     assert res == -20
 
     #Se comprueba el funcionamiento del metodo DIVIDIR
+def test_dividir():
     res = calculadora.dividir(10.0, 1.0)
     print(res)
     assert res == 10.0
@@ -57,6 +61,7 @@ def test_calculadora():
     assert res == 'ZeroDivisionError'
 
     #Se comprueba el funcionamiento del metodo VALIDAR_ENTRADA
+def test_validar_entrada():
     res = calculadora.valida_entrada(['1', '+', '2'])
     assert res == True
     print(res)
